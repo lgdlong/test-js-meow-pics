@@ -7,10 +7,11 @@ function upDate(previewPic) {
     document.getElementById("image").innerText = previewPic.alt;
 
     // Step 5: Change the src of the image
-    previewPic.src = './assets/cat2.jpg';
+    previewPic.dataset.originalSrc = previewPic.src; // Store original src
+    previewPic.src = './assets/alt-pic.jpg';
 }
 
 function unDo(previewPic) {
     // Revert the src of the image
-    previewPic.src = './assets/cat1.jpg';
+    previewPic.src = previewPic.dataset.originalSrc;
 }
