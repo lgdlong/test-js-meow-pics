@@ -3,5 +3,21 @@
 }
 img {
     width: auto;
-    height: 100px;
+    height: 200px;
+}
+
+/* img:hover {
+    transform: scale(1.1);
+} */
+
+@media (max-width: 998px) {
+    img {
+        height: 80px;
+    }
+}
+
+@media (max-width: 772px) {
+    img {
+        height: 60px;
+    }
 }
